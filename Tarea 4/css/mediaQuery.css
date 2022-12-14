@@ -7,6 +7,9 @@
     gap: 5px;
     padding: 10px;
   }
+  body {
+    font-size: 10px;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .GridContainer {
@@ -17,6 +20,9 @@
     gap: 5px;
     padding: 10px;
   }
+  body {
+    font-size: 15px;
+  }
 }
 @media only screen and (min-width: 769px) {
   .GridContainer {
@@ -26,6 +32,9 @@
     grid-template-areas: "item1 item2 item3 item4" "item5 item6 item7 item8";
     gap: 5px;
     padding: 10px;
+  }
+  body {
+    font-size: 20px;
   }
 }
 

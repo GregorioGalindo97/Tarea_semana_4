@@ -5,10 +5,15 @@
 
     h1{
         text-align: center;
+        border: 1px solid ;
+        text-align: center;
+        border-radius: 10px;
+        background: linear-gradient(90deg, $gradiente, orange );
     }
-    h1::first-letter{
-        color: $colorBlanco;
+    h2{
+        @extend h1;
     }
+
 
     .dropdown a::before{
         opacity: 0.5;
@@ -33,7 +38,7 @@
     
     
     input{
-            border-radius: 5px;
+        border-radius: 5px;
     }
     input:active{
         background-color: $colorNaranja;
@@ -45,6 +50,7 @@
     }
 
     .container{
+        border-radius: 10px;
         position: sticky;
         top: 10px;
         left: 20px;
@@ -53,6 +59,7 @@
         background-color: $colorBlanco;
     }
     .container>div{
+        
         background-color: $colorAzul1;
         color: $colorBlanco;
         width: cover;
