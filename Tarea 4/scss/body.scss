@@ -1,0 +1,120 @@
+
+    body{
+        background-color: $colorAzul2;
+    }
+
+    h1{
+        text-align: center;
+    }
+    h1::first-letter{
+        color: $colorBlanco;
+    }
+
+    .dropdown a::before{
+        opacity: 0.5;
+    }
+    .material-symbols-outlined {
+        border-style:solid;
+        border-color: $colorNegro;
+        border-radius: 1rem;
+        transition-duration: 2s;
+        cursor: pointer;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+    span.material-symbols-outlined:hover{
+        width: 2rem;
+        height: 2rem;
+        transform: scale(3);
+    }
+    
+    
+    input{
+            border-radius: 5px;
+    }
+    input:active{
+        background-color: $colorNaranja;
+    }
+    .logo{
+        width:7rem ;
+        height: 7rem;
+        background-color: $colorAzul1;
+    }
+
+    .container{
+        position: sticky;
+        top: 10px;
+        left: 20px;
+        display:flex;
+        align-items: stretch;
+        background-color: $colorBlanco;
+    }
+    .container>div{
+        background-color: $colorAzul1;
+        color: $colorBlanco;
+        width: cover;
+        text-align: center;
+        margin:0px;
+        line-height: 100px;
+        font-size: 2rem;
+        flex-grow: 1;
+    }
+    .dropdown {
+        display: inline-block;
+        position: relative;
+    }
+    .dropdown-content {
+         display: none;
+         position: absolute;
+         width: 300px;
+         overflow: auto;
+         box-shadow: 0px 10px 10px 0px $colorNegro;
+    }
+    .dropdown:hover .dropdown-content {
+     display: block;
+     background-color: $colorAzul3;
+    }
+    .dropdown-content a {
+      display: block;
+      color: $colorNegro;
+      padding: 5px;
+    }
+    .dropdown-content a:hover {
+     color: $colorBlanco;
+     background-color: $colorAzul2;
+    }   
+    .GridContainer>img{
+        @include imagenes($colorNaranja,$colorNegro,2px);
+    }
+    .GridContainer>p{
+        @include imagenes($colorNaranja,$colorNegro,2px);
+    }
+.item1{
+    @include item(item1,20px);
+}
+.item2{
+    @include item(item2,20px);
+}
+.item3{
+    @include item(item3,20px);
+}
+.item4{
+    @include item(item4,20px);
+}
+.item5{
+    @include item(item5,20px);
+}
+.item6{
+    @include item(item6,20px);
+}
+.item7{
+    @include item(item7,20px);
+}
+.item8{
+    @include item(item8,20px);
+}
+ 
+        

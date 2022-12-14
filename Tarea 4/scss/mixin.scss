@@ -1,0 +1,14 @@
+@mixin item($nombre,$radio){
+    grid-area: $nombre;
+    border-radius: $radio;
+}
+
+@mixin imagenes($colorFondo,$colorOrilla,$radioBorde){
+    display: flex;
+    height: 100px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color:$colorFondo;
+    border: $radioBorde solid $colorOrilla;
+}

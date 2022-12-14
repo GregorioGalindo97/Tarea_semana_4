@@ -1,0 +1,185 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .GridContainer {
+    border: 5px solid;
+    background-color: #5efff8;
+    display: grid;
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8";
+    gap: 5px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .GridContainer {
+    border: 5px solid;
+    background-color: #5efff8;
+    display: grid;
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8";
+    gap: 5px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .GridContainer {
+    border: 5px solid;
+    background-color: #5efff8;
+    display: grid;
+    grid-template-areas: "item1 item2 item3 item4" "item5 item6 item7 item8";
+    gap: 5px;
+    padding: 10px;
+  }
+}
+body {
+  background-color: #08edff;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1::first-letter {
+  color: #fffbf3;
+}
+
+.dropdown a::before {
+  opacity: 0.5;
+}
+
+.material-symbols-outlined {
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 1rem;
+  transition-duration: 2s;
+  cursor: pointer;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+span.material-symbols-outlined:hover {
+  width: 2rem;
+  height: 2rem;
+  transform: scale(3);
+}
+
+input {
+  border-radius: 5px;
+}
+
+input:active {
+  background-color: #ff9900;
+}
+
+.logo {
+  width: 7rem;
+  height: 7rem;
+  background-color: #08beff;
+}
+
+.container {
+  position: sticky;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  align-items: stretch;
+  background-color: #fffbf3;
+}
+
+.container > div {
+  background-color: #08beff;
+  color: #fffbf3;
+  width: cover;
+  text-align: center;
+  margin: 0px;
+  line-height: 100px;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 300px;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px #000000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #0ffff8;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+}
+
+.dropdown-content a:hover {
+  color: #fffbf3;
+  background-color: #08edff;
+}
+
+.GridContainer > img {
+  display: flex;
+  height: 100px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff9900;
+  border: 2px solid #000000;
+}
+
+.GridContainer > p {
+  display: flex;
+  height: 100px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff9900;
+  border: 2px solid #000000;
+}
+
+.item1 {
+  grid-area: item1;
+  border-radius: 20px;
+}
+
+.item2 {
+  grid-area: item2;
+  border-radius: 20px;
+}
+
+.item3 {
+  grid-area: item3;
+  border-radius: 20px;
+}
+
+.item4 {
+  grid-area: item4;
+  border-radius: 20px;
+}
+
+.item5 {
+  grid-area: item5;
+  border-radius: 20px;
+}
+
+.item6 {
+  grid-area: item6;
+  border-radius: 20px;
+}
+
+.item7 {
+  grid-area: item7;
+  border-radius: 20px;
+}
+
+.item8 {
+  grid-area: item8;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
